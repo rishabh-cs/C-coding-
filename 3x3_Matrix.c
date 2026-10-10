@@ -6,7 +6,7 @@
 int arrayinput(int x[3][3]){
     for(int i=0;i<3;i++)
         for(int j=0;j<3;j++){
-            printf("Give Your Matrix Input Element %d%d: ",i,j);
+            printf("Give Your Matrix Input Element [%d][%d]: ",i+1,j+1);
             scanf("%d",&x[i][j]);
         }
 }
@@ -14,7 +14,7 @@ int arrayinput(int x[3][3]){
 int arrayoutput(int y[3][3]){
     for(int i=0;i<3;i++)
         for(int j=0;j<3;j++)
-            printf("Your Matrix Element %d%d is: %d\n",i,j,y[i][j]);
+            printf("Your Matrix Element [%d][%d] is: %d\n",i+1,j+1,y[i][j]);
     printf("\n");
 }
 
